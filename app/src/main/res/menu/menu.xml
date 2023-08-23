@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@id/lista"
+        android:enabled="true"
+        android:icon="@drawable/ic_lista"
+        android:title="Lista"/>
+
+    <item
+        android:id="@id/favoritos"
+        android:enabled="true"
+        android:icon="@drawable/ic_favoritos"
+        android:title="Favoritos"/>
+
+    <item
+        android:id="@id/listaFirebase"
+        android:enabled="true"
+        android:icon="@drawable/ic_nube"
+        android:title="Firebase"/>
+
+    <item
+        android:id="@id/informacion"
+        android:enabled="true"
+        android:icon="@drawable/ic_info"
+        android:title="Info"/>
+
+</menu>

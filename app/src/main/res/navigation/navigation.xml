@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/lista">
+
+    <fragment
+        android:id="@+id/lista"
+        android:name="com.yactayo.ecfinal_yactayo.fragments.Lista"
+        android:label="fragment_lista"
+        tools:layout="@layout/fragment_lista" >
+        <action
+            android:id="@+id/action_lista_to_detalle"
+            app:destination="@id/detalle" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritos"
+        android:name="com.yactayo.ecfinal_yactayo.fragments.Favoritos"
+        android:label="fragment_favoritos"
+        tools:layout="@layout/fragment_favoritos" />
+    <fragment
+        android:id="@+id/listaFirebase"
+        android:name="com.yactayo.ecfinal_yactayo.fragments.ListaFirebase"
+        android:label="fragment_lista_firebase"
+        tools:layout="@layout/fragment_lista_firebase" />
+    <fragment
+        android:id="@+id/informacion"
+        android:name="com.yactayo.ecfinal_yactayo.fragments.Informacion"
+        android:label="fragment_informacion"
+        tools:layout="@layout/fragment_informacion" />
+    <fragment
+        android:id="@+id/detalle"
+        android:name="com.yactayo.ecfinal_yactayo.fragments.Detalle"
+        android:label="fragment_detalle"
+        tools:layout="@layout/fragment_detalle" >
+        <argument
+            android:name="lista"
+            app:argType="com.yactayo.ecfinal_yactayo.model.ListaModel" />
+    </fragment>
+</navigation>
